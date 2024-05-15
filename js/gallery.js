@@ -65,6 +65,7 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
+
 gallery.style.padding = "0";
 gallery.style.maxWidth = "1128px";
 gallery.style.margin = "0 auto";
@@ -72,8 +73,7 @@ gallery.style.display = "flex";
 gallery.style.listStyleType = "none";
 gallery.style.gap = "48px 24px";
 gallery.style.flexWrap = "wrap";
-gallery.style.alignItems = "center";
-gallery.style.justifyContent = "center";
+
 const frag = document.createDocumentFragment();
 
 images.forEach((image) => {
@@ -127,17 +127,3 @@ gallery.addEventListener("mouseout", (event) => {
   event.target.style.transition = "transform 0.4 ease";
   event.target.style.transform = "scale(1)";
 });
-
-// console.log(galleryImage);
-
-// for (let i = 0; i < galleryImage.length; i++) {
-//   galleryImage[i].addEventListener("click", (event) => {
-//     event.preventDefault();
-//   });
-//   galleryImage[i].addEventListener("mouseover", () => {
-//     galleryImage[i].style.transform = "scale(1.04)";
-//   });
-//   galleryImage[i].addEventListener("mouseout", () => {
-//     galleryImage[i].style.transform = "scale(1)";
-//   });
-// }
